@@ -7,18 +7,38 @@
 //
 
 #import "AppDelegate.h"
+#import "SessionViewController.h"
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+@synthesize navController;
 
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    return YES;
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+        self.window=[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        self.obj=[[SessionViewController alloc] initWithNibName:@"SessionViewController" bundle:nil];
+        self.navController=[[UINavigationController alloc] initWithRootViewController:self.obj];
+        self.window.rootViewController=self.navController;
+        [self.window makeKeyAndVisible];
+    
+        return YES;
 }
+
+#pragma mark - Handle Background Call
+
+-(void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)())completionHandler
+{
+    if([identifier isEqualToString:@"backgroundTask1"])
+    {
+        self.completionHANDLER=completionHandler;
+    }
+}
+
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

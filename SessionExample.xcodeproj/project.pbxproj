@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		F14BD4A91D7038AD00BCC60D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F14BD4A81D7038AD00BCC60D /* main.m */; };
 		F14BD4AC1D7038AD00BCC60D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F14BD4AB1D7038AD00BCC60D /* AppDelegate.m */; };
-		F14BD4AF1D7038AD00BCC60D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14BD4AE1D7038AD00BCC60D /* ViewController.m */; };
-		F14BD4B21D7038AD00BCC60D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F14BD4B01D7038AD00BCC60D /* Main.storyboard */; };
 		F14BD4B41D7038AD00BCC60D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14BD4B31D7038AD00BCC60D /* Assets.xcassets */; };
 		F14BD4B71D7038AD00BCC60D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F14BD4B51D7038AD00BCC60D /* LaunchScreen.storyboard */; };
+		F14BD4C11D70408400BCC60D /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F14BD4C01D70408400BCC60D /* MainWindow.xib */; };
+		F14BD4C51D70496400BCC60D /* SessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14BD4C31D70496400BCC60D /* SessionViewController.m */; };
+		F14BD4C61D70496400BCC60D /* SessionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F14BD4C41D70496400BCC60D /* SessionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,13 @@
 		F14BD4A81D7038AD00BCC60D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F14BD4AA1D7038AD00BCC60D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F14BD4AB1D7038AD00BCC60D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F14BD4AD1D7038AD00BCC60D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F14BD4AE1D7038AD00BCC60D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F14BD4B11D7038AD00BCC60D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F14BD4B31D7038AD00BCC60D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F14BD4B61D7038AD00BCC60D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F14BD4B81D7038AD00BCC60D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F14BD4C01D70408400BCC60D /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = ../MainWindow.xib; sourceTree = "<group>"; };
+		F14BD4C21D70496400BCC60D /* SessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SessionViewController.h; path = ../SessionViewController.h; sourceTree = "<group>"; };
+		F14BD4C31D70496400BCC60D /* SessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SessionViewController.m; path = ../SessionViewController.m; sourceTree = "<group>"; };
+		F14BD4C41D70496400BCC60D /* SessionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SessionViewController.xib; path = ../SessionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +62,10 @@
 			children = (
 				F14BD4AA1D7038AD00BCC60D /* AppDelegate.h */,
 				F14BD4AB1D7038AD00BCC60D /* AppDelegate.m */,
-				F14BD4AD1D7038AD00BCC60D /* ViewController.h */,
-				F14BD4AE1D7038AD00BCC60D /* ViewController.m */,
-				F14BD4B01D7038AD00BCC60D /* Main.storyboard */,
+				F14BD4C01D70408400BCC60D /* MainWindow.xib */,
+				F14BD4C21D70496400BCC60D /* SessionViewController.h */,
+				F14BD4C31D70496400BCC60D /* SessionViewController.m */,
+				F14BD4C41D70496400BCC60D /* SessionViewController.xib */,
 				F14BD4B31D7038AD00BCC60D /* Assets.xcassets */,
 				F14BD4B51D7038AD00BCC60D /* LaunchScreen.storyboard */,
 				F14BD4B81D7038AD00BCC60D /* Info.plist */,
@@ -136,9 +139,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F14BD4C11D70408400BCC60D /* MainWindow.xib in Resources */,
+				F14BD4C61D70496400BCC60D /* SessionViewController.xib in Resources */,
 				F14BD4B71D7038AD00BCC60D /* LaunchScreen.storyboard in Resources */,
 				F14BD4B41D7038AD00BCC60D /* Assets.xcassets in Resources */,
-				F14BD4B21D7038AD00BCC60D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,23 +153,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F14BD4AF1D7038AD00BCC60D /* ViewController.m in Sources */,
 				F14BD4AC1D7038AD00BCC60D /* AppDelegate.m in Sources */,
 				F14BD4A91D7038AD00BCC60D /* main.m in Sources */,
+				F14BD4C51D70496400BCC60D /* SessionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F14BD4B01D7038AD00BCC60D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F14BD4B11D7038AD00BCC60D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F14BD4B51D7038AD00BCC60D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
